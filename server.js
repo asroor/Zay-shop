@@ -8,6 +8,10 @@ const exphbs = require('express-handlebars');
 const homeRoutes = require('./routes/homeRoutes');
 const shopRoutes = require('./routes/shopRouter');
 
+// Body parser
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
+
 // Initalize engen template (Handlebars)
 app.engine('.hbs', exphbs.engine({ extname: '.hbs' }))
 app.set('view engine', '.hbs');

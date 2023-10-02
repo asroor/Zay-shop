@@ -1,0 +1,50 @@
+<div class="container my-5">
+	<form action="/shop/add" method="POST">
+		<div class="mb-3">
+			<label for="shop_image" class="form-label">Shop Image</label>
+			<input name="shop_image" type="text" class="form-control" id="shop_image">
+		</div>
+		<div class="mb-3">
+			<label for="shop_title" class="form-label">Shop title</label>
+			<input type="text" name="shop_title" class="form-control" id="shop_title">
+		</div>
+		<div class="mb-3">
+			<div class="form-check form-switch">
+				<input class="form-check-input" name="size_M" type="checkbox" role="switch" id="size_M">
+				<label class="form-check-label" for="size_M">M</label>
+			</div>
+			<div class="form-check form-switch">
+				<input class="form-check-input" name="size_L" type="checkbox" role="switch" id="size_L">
+				<label class="form-check-label" for="size_L">L</label>
+			</div>
+			<div class="form-check form-switch">
+				<input class="form-check-input" name="size_X" type="checkbox" role="switch" id="size_X">
+				<label class="form-check-label" for="size_X">X</label>
+			</div>
+			<div class="form-check form-switch">
+				<input class="form-check-input" name="size_XL" type="checkbox" role="switch" id="size_XL">
+				<label class="form-check-label" for="size_XL">XL</label>
+			</div>
+			<div class="form-check form-switch">
+				<input class="form-check-input" name="size_XXl" type="checkbox" role="switch" id="size_XXL">
+				<label class="form-check-label" for="size_XXL">XXL</label>
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="shop_price" class="form-label">Shop price</label>
+			<input type="number" class="form-control" id="shop_price">
+		</div>
+		<div class="mb-3">
+			<div class="form-floating">
+				<textarea name="disc" class="form-control" id="shop_disc" placeholder="Shop siscraption"
+					style="height: 100px"></textarea>
+				<label for="shop_disc">Discraption</label>
+			</div>
+		</div>
+		<div class="mb-3 form-check">
+			<input type="checkbox" class="form-check-input" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">Barcha ma'lumotlar tayyor</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Joylash</button>
+	</form>
+</div>
