@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const homeControlPage = require('../controls/homeControls')
+const homeControlPage = require('../controller/homeControls')
 
 router.get('/', homeControlPage);
 
