@@ -4,7 +4,7 @@ const { getShop, addShop, addNewShop, getOneShop } = require('../controller/shop
 
 router.get('/shop', getShop);
 router.get('/shop/add', addShop);
-router.get('/:id', getOneShop);
+router.get('/shop/:id', getOneShop);
 router.post('/shop/add', addNewShop);
 
 module.exports = router;
