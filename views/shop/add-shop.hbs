@@ -1,8 +1,8 @@
 <div class="container my-5">
-	<form action="/shop/add" method="POST">
+	<form action="/shop/add" method="POST" enctype="multipart/form-data">
 		<div class="mb-3">
 			<label for="shop_image" class="form-label">Shop Image</label>
-			<input name="shop_image" type="text" class="form-control" id="shop_image">
+			<input name="shop_image" type="file" class="form-control" id="shop_image">
 		</div>
 		<div class="mb-3">
 			<label for="shop_title" class="form-label">Shop title</label>

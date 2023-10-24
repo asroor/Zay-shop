@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const homeRouter = require('./routes/homeRouter');
 const shopRouter = require('./routes/shopRouter');
+const aboutRouter = require('./routes/aboutRouter');
 
 // Body parser
 app.use(express.json());
@@ -24,11 +25,12 @@ app.set('view engine', '.hbs');
 app.set('views', './views');
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 // Routes use && Initialize Routes
 app.use(homeRouter);
 app.use(shopRouter);
+app.use(aboutRouter);
 
 // Server PORT = dotenv
 const PORT = process.env.PORT || 8080

@@ -31,7 +31,7 @@ const addShop = (req, res) => {
 const addNewShop = async (req, res) => {
 	const shop = {
 		id: v4(),
-		shop_image: req.body.shop_image,
+		shop_image: req.file.filename,
 		shop_title: req.body.shop_title,
 		size: req.body.size,
 		shop_price: req.body.shop_price,
